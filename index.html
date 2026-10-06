@@ -5,121 +5,218 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Hotel booking confirmation page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
 <body>
 
   <!-- Sidebar starts -->
-
-  Maison Soleil
+  <aside>
+ 
+  <header>
+    <a href="#">Maison Soleil</a>
+  </header>
 
   <!-- Guest navigation -->
-  Your stay
-  1
-  The house
-  Around town
-  Breakfast
-  Messages
+   <nav>
+    <ul>
+      <li>
+        <a href="#" aria-current="page">
+          Your Stay
+          <span>1</span>
+        </a>
+      </li>
 
+      <li><a href="#">The house</a></li>
+      <li><a href="#">Around town</a></li>
+      <li><a href="#">Breakfast</a></li>
+      <li><a href="#">Messages</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Today in Cassis</h2>
+    <p> 27°</p>
+    <p>Sunny · light breeze</p>
+  </section>
   <!-- Local weather -->
-  Today in Cassis
-  27°
-  Sunny · light breeze
-
-  Est. 1987
-  Maison Soleil · 12 Rue des Oliviers · Cassis
-  © 2026 Maison Soleil
-
+  
+  <div>
+    <p>Est. 1987</p>
+    <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+    <p> © 2026 Maison Soleil</p>
+  </div>   
+  </aside>
+    
   <!-- Sidebar ends -->
 
   <!-- Main content starts -->
-
-  Booking · Confirmed
-  Bienvenue, Lucia.
-
-  Print receipt
-  Add to calendar
-
+  <main>
+    <header>
+      <p> Booking · Confirmed</p>
+      <h1>Bienvenue, Lucia.</h1>
+      <div>
+        <button type="button">Print receipt</button>
+        <button type="button">Add to calendar</button>
+      </div>
+    </header>
   <!-- Booking cards start -->
 
   <!-- Receipt card -->
-  Receipt
-  № MS-2026
-  0421-AH
+   <section>
+    <article>
+      <h2> Receipt</h2>
+      <div>
+        <span>№ MS-2026</span>
+        <span> 0421-AH</span>
+      </div>
+    
+   
+   <section>
+    <h3>Your stay</h3>
+    <div>
+      <div>
+        <p>Check in</p>
+        <p>25 Apr</p>
+        <p>Saturday · 15:00</p>
+      </div>
 
-  Your stay
+      <div>
+        <p>Check out</p>
+        <p>29 Apr</p>
+        <p>Wednesday · 11:00</p>
+      </div>
+    </div>
+   </section>
+   
+  <div>
+    <div>
+      <span>Room · La Garrigue · 4 nights</span>
+      <span>€ 620.00</span>
+    </div>
 
-  Check in
-  25 Apr
-  Saturday · 15:00
+    <div>
+      <span>Breakfast · 2 guests</span>
+      <span>€ 96.00</span>
+    </div>
 
-  Check out
-  29 Apr
-  Wednesday · 11:00
+    <div>
+      <span>Tourist tax</span>
+      <span>€ 14.40</span>
+    </div>
+  </div>
+  
 
-  Room · La Garrigue · 4 nights
-  € 620.00
-  Breakfast · 2 guests
-  € 96.00
-  Tourist tax
-  € 14.40
+  <div>
+    <div>
+      <span>Total paid</span>
+      <span>€ 730.40</span>
+    </div>
+    <p>Paid · Wise · GBP</p>
+  </div>
 
-  Total paid
-  € 730.40
-
-  Paid · Wise · GBP
   <!-- Barcode image -->
+</article>
 
-  <!-- Note from host card -->
-  Welcome
-  A note from your host, Margaux.
-  We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
-  Room
-  La Garrigue
+<!-- Note from host card --> 
+  <article>
+    <h2>Welcome</h2>
+    <p>
+      A note from your host, Margaux.
+    </p>
+
+    <p>
+      We're so glad you're coming. The shutters will be open, the lemonade
+      cold, and the cat - Poivre - pretending not to notice you.
+    </p>
+
+    <div>
+      <span>Room</span>
+      <span> La Garrigue</span>
+    </div>
+  </article>
+</section>
 
   <!-- Booking cards end -->
 
   <!-- Guest info row starts -->
 
   <!-- Arrival -->
-  Arrival
-  01
-  Check-in from 15:00
-  Sat, 25 April
-  Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
+<section>   
+  <article>
+    <div>
+      <h2>Arrival</h2>
+      <span> 01</span>
+    </div>
+
+    <p>
+      Check-in from 15:00
+    </p>
+
+    <p>
+      Sat, 25 April
+    </p>
+
+    <p>
+        Ring the brass bell by the blue door. If we're at the market, 
+        the key is in the terracotta pot by the olive tree.
+    </p>
+  </article>   
 
   <!-- Wifi -->
-  Wifi
-  02
-  Le Soleil · Guest
-  Password below
-  Network
-  Le Soleil · Guest
-  Password
-  soleil-2026
-  Copy
+  <article>
+    <div>
+      <h2>Wifi</h2>
+      <span>02</span>
+    </div>
 
+    <p>
+      Le Soleil · Guest
+    </p>
+
+    <p>
+      Password below
+    </p>
+
+    <div>
+      <div>
+        <span>Network</span>
+        <span>Le Soleil · Guest</span>
+      </div>
+
+      <div>
+        <span>Password</span>
+        <span>soleil-2026</span>
+        <button type="button">Copy</button>
+      </div>
+    </div>
+  </article>
+  
   <!-- Breakfast -->
-  Breakfast
-  03
-  Served 8 - 10:30
-  On the terrace
-  Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
+  <article>
+    <div>
+      <h2>Breakfast</h2>
+      <span> 03</span>
+    </div>
+    <p>
+      Served 8 - 10:30
+    </p>
 
+    <p>
+      On the terrace
+    </p>
+
+    <p>
+      Fresh figs, Marseille honey, pain au levain, and espresso. 
+      Gluten-free option? Leave a note the night before.
+    </p>
+  </article>
+</section>
   <!-- Guest info row ends -->
-
   <!-- Main content ends -->
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+  </main>
 </body>
 </html>
