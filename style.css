@@ -140,9 +140,17 @@ aside nav a[aria-current="page"] span {
 }
 
 /* Sidebar Nave Weather Block */
-aisde > section {
+aside > section {
     margin-top: auto;
-    padding-top: 2rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+
+    color: var(--neutral-900);
+    background-color: var(--sun-300);
+    background-image: url("./assets/images/icon-weather.svg");
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: right -1.50rem top -1.50rem;
 }
 
 aside > section h2 {
@@ -168,6 +176,9 @@ aside nav ul {
     flex-direction: column;
     gap: 0.5rem;
 }
+
+
+
 
 /* Sidebar Nav Hotel Details */
 aside div {
